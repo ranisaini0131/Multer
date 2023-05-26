@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<body>
+
+    <title>File Upload</title>
+
+    // For Single Upload
+    <form method="POST" action="/profile-upload-single" enctype="multipart/form-data">
+        <div>
+            <label>Upload profile picture</label>
+            <input type="file" name="profile-file" required />
+        </div>
+        <div>
+            <input type="submit" value="Upload" />
+        </div>
+    </form>
+
+    <hr>
+
+    //For Multiple form
+
+    <form method="POST" action="/profile-upload-multiple" enctype="multipart/form-data">
+        <div>
+            <label>Upload multiple profile picture</label>
+            <input type="file" name="profile-files" required multiple />
+        </div>
+        <div>
+            <input type="submit" value="Upload" />
+        </div>
+    </form>
+
+</body>
+</head>
+
+</html>
